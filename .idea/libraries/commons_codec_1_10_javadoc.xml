@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="commons-codec-1.10-javadoc">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../JavaLib/guava/guava-10.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../JavaLib/gson/gson-2.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../JavaLib/slf4j-1.7.22/slf4j-api-1.7.22.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../JavaLib/slf4j-1.7.22/slf4j-simple-1.7.22.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../JavaLib/varabi-filmweb-api-12942c8cf766/target/FilmwebApi-0.3.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../JavaLib/jsoup/jsoup-1.10.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../JavaLib/commons-codec-1.10/commons-codec-1.10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../JavaLib/mysql-connector/mysql-connector-java-5.1.40-bin.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../../JavaLib/commons-codec-1.10/commons-codec-1.10-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../JavaLib/varabi-filmweb-api-12942c8cf766/target/FilmwebApi-0.3.3-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../JavaLib/jsoup/jsoup-1.10.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

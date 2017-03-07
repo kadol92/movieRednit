@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Controller">
+    <children>
+        <MenuBar>
+            <menus>
+                <Menu mnemonicParsing="false" text="Konto">
+                    <items>
+                  <MenuItem fx:id="menuItemProfile" mnemonicParsing="false" onAction="#showProfile" text="Profil" visible="false" />
+                        <MenuItem mnemonicParsing="false" onAction="#loginToDB" text="Zaloguj" />
+                        <MenuItem mnemonicParsing="false" onAction="#registerIntoDB" text="Rejestracja" />
+                        <MenuItem mnemonicParsing="false" onAction="#importMoviesFilmweb" text="Import filmów z Filmweb" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <HBox>
+            <children>
+                <ListView fx:id="movieList" minWidth="200.0" onKeyReleased="#changeView" onMousePressed="#changeView" prefWidth="200.0" />
+                <GridPane>
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+                    </rowConstraints>
+                    <children>
+                        <fx:include fx:id="login" source="login.fxml" visible="true" GridPane.columnIndex="1" />
+                        <fx:include fx:id="register" source="register.fxml" visible="false" GridPane.columnIndex="1" />
+                        <fx:include fx:id="content" source="content.fxml" visible="false" GridPane.columnIndex="1" />
+                        <fx:include fx:id="profile" source="profile.fxml" visible="false" GridPane.columnIndex="1" />
+                    </children>
+                </GridPane>
+            </children>
+        </HBox>
+    </children>
+</VBox>

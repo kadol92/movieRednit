@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="content" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ContentController">
+   <children>
+      <HBox maxHeight="260.0" minHeight="220.0" prefHeight="260.0" prefWidth="600.0">
+         <children>
+            <Pane minHeight="200.0" minWidth="145.0" prefHeight="200.0" prefWidth="144.0">
+               <children>
+                  <ImageView fx:id="movieImage" fitHeight="195.0" fitWidth="141.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../loading.gif" />
+                     </image>
+                  </ImageView>
+               </children>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Pane>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="400.0">
+               <children>
+                  <Label fx:id="movieTitleLabel" text="STAR WARS" textAlignment="CENTER">
+                     <padding>
+                        <Insets top="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="movieDateLabel" text="Premiera: 22.02.2016">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="movieGenreLabel" text="Gatunki: Sci-Fi / Akcja">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="interestedNumberLabel" text="Liczba osób, która chce zobaczyć ten film: ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="genrePercetageLabel" text="86% w Twoim guście">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+         </children>
+      </HBox>
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <HBox>
+               <children>
+                  <Button fx:id="interestedButton" mnemonicParsing="false" onAction="#showInterested" text="Wyświetl zainteresowanych">
+                     <HBox.margin>
+                        <Insets bottom="40.0" left="90.0" right="40.0" top="40.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="setAsInterestedButton" mnemonicParsing="false" onAction="#setAsInterested" text="Dołącz do zainteresowanych">
+                     <HBox.margin>
+                        <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</VBox>
